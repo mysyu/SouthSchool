@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.mmlab.southschool.MainActivity"
+    android:background="@android:color/background_dark">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="410dp"
+            android:id="@+id/mainfame"
+            android:layout_above="@+id/doBtn"
+            android:layout_weight="0.76">
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:text="背包"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/toBag" />
+
+            <Button
+                android:text="血量50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hp"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="等級1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/level"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="查看"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/doBtn"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:layout_alignParentStart="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
